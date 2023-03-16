@@ -1,0 +1,27 @@
+#logo {
+  display: flex;
+  margin: auto;
+  width: 500px;
+}
+
+.navBar {
+  display: flex;
+  justify-content: center;
+}
+.navItem {
+  padding: 20px;
+  text-decoration: none;
+  color: rgb(20, 20, 20);
+}
+.imageContainer {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+.imageDiv {
+  width: 500px;
+  margin-left: 10px;
+}
+.imageDiv img {
+  max-width: 100%;
+}

@@ -1,6 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
+    <link rel="stylesheet" href="styles.css" />
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
@@ -17,44 +18,47 @@
     <meta property="og:image" content="./painting" />
     <title>Ryan's Personal Blog</title>
   </head>
-  <img src="/img/logo.png" alt="blog logo" />
-  <nav>
-    <ul>
-      <li><a>Home</a></li>
-      <li><a>About</a></li>
-      <li><a>Contact</a></li>
-    </ul>
+  <img id="logo" src="/img/logo.png" alt="blog logo" />
+  <nav class="navBar">
+    <a class="navItem" href="#">Home</a>
+    <a class="navItem" href="#">About</a>
+    <a class="navItem" href="#">Contact</a>
   </nav>
   <body>
-    <div>
-      <h2>Army Time</h2>
-      <img src="./img/army.png" alt="Selfie of when I was in the army" />
-      <p>
-        This photo was taken when I was in the army, Maybe around 19 years old.
-        I was tasked with organizing and distributing ammo. I remeber I really
-        wanted to smoke but smoking next to live ammo is not the best idea. This
-        was my 1st real job and one of my life goals. I got to experience a
-        pretty interesting life style and activities from being in nature for
-        days on end, parachuting, learning how to use different firearms,
-        tactics and teamwork. I also learned to move on and try other things as
-        well.
-      </p>
-    </div>
-    <div>
-      <img src="./img/movie.png" alt="photo taken when I was in a film" />
-      <p>
-        One cool thing I tried was acting in a film. I learned I do not like
-        acting. I also have a deeper appreciation for such jobs.
-      </p>
-    </div>
-    <div>
-      <img src="./img/taiwan.png" alt="Me ontop of a mountain in taiwan" />
-      <p>
-        This photo was taken when I travelled to Taiwan to get married. It was
-        quite a trip, different culture. I learned more about food and different
-        perspectives on life. I am glad to be home but I miss it there. I did
-        bring a piece of Taiwan home with me though... That being my wife, Ruru!
-      </p>
+    <div class="imageContainer">
+      <div class="imageDiv">
+        <h2>Army Time</h2>
+        <img src="./img/army.png" alt="Selfie of when I was in the army" />
+        <p>
+          This photo was taken when I was in the army, Maybe around 19 years
+          old. I was tasked with organizing and distributing ammo. I remeber I
+          really wanted to smoke but smoking next to live ammo is not the best
+          idea. This was my 1st real job and one of my life goals. I got to
+          experience a pretty interesting life style and activities from being
+          in nature for days on end, parachuting, learning how to use different
+          firearms, tactics and teamwork. I also learned to move on and try
+          other things as well.
+        </p>
+      </div>
+      <div class="imageDiv">
+        <h2>Movie Time</h2>
+        <img src="./img/movie.png" alt="photo taken when I was in a film" />
+        <p>
+          One cool thing I tried was acting in a film. I learned I do not like
+          acting. I also have a deeper appreciation for such jobs.
+        </p>
+      </div>
+      <div class="imageDiv">
+        <h2>Taiwan Time</h2>
+        <img src="./img/taiwan.png" alt="Me ontop of a mountain in taiwan" />
+        <p>
+          This photo was taken when I travelled to Taiwan to get married. It was
+          quite a trip, different culture. I learned more about food and
+          different perspectives on life. I am glad to be home but I miss it
+          there. I did bring a piece of Taiwan home with me though... That being
+          my wife, Ruru!
+        </p>
+      </div>
     </div>
   </body>
 </html>
