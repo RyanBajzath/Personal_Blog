@@ -161,3 +161,15 @@ table {
 .imageDiv img {
   max-width: 100%;
 }
+
+img:hover {
+  box-shadow: black 1px;
+}
+a:hover {
+  font-weight: 300;
+}
+
+.imageDiv:hover {
+  box-shadow: 5px 0px 25px black;
+  background: rgba(135, 247, 135, 0.397);
+}
