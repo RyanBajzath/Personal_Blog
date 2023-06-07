@@ -1,0 +1,70 @@
+body {
+  margin: 0;
+  background: #050505;
+}
+.nameContainer {
+  width: 100vw;
+  display: flex;
+  justify-content: center;
+}
+
+.name {
+  text-transform: uppercase;
+  text-shadow: -10px 5px 2px black;
+  color: white;
+  letter-spacing: -0.25em;
+  font-family: "Anton", Arial, sans-serif;
+  user-select: none;
+  text-transform: uppercase;
+  font-size: 150px;
+  transition: all 1s ease-out;
+}
+.name:hover,
+.name:focus {
+  text-shadow: 10px 10px black;
+  color: #19cc5e;
+  letter-spacing: -0.1em;
+}
+.whoIam {
+  position: relative;
+
+  margin-left: 5vw;
+  font-family: "Anton", Arial, sans-serif;
+  font-size: 50px;
+
+  position: relative;
+  cursor: crosshair;
+
+  display: inline-block;
+}
+.whoIam p {
+  position: relative;
+
+  width: auto;
+  animation: fall 2s ease-in-out forwards;
+}
+img {
+  border-radius: 50%;
+  width: 250px;
+  animation: fall 2s ease-in-out forwards;
+}
+
+@keyframes fall {
+  0% {
+    top: -50vh; /* Starting position above the container */
+  }
+  100% {
+    top: 0px; /* Final position at the top of the container */
+  }
+}
+.whoIam p:nth-child(odd) {
+  color: coral;
+  margin-right: 50px;
+}
+.whoIam p:nth-child(even) {
+  color: white;
+  margin-left: 50px;
+}
+.whoIam p:hover:after {
+  content: ". test";
+}
