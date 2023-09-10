@@ -1,11 +1,11 @@
-import "./App.css";
+
 
 import React from "react";
 import { BrowserRouter, Routes, Route, Link } from "react-router-dom";
-import LandingPage from "./assets/components/components/LandingPage";
-import AboutPage from "./assets/components/components/AboutPage";
-import ContactPage from "./assets/components/components/ContactPage";
-import NavBar from "./assets/components/NavBar";
+import LandingPage from "./pages/LandingPage";
+import AboutPage from "./pages/AboutPage";
+import ContactPage from "./pages/ContactPage";
+import NavBar from "./components/NavBar";
 
 function App() {
   return (
