@@ -8,8 +8,9 @@ function AboutPage() {
     <>
       <div>
         <h1>AboutPage</h1>
-        <p>Name: {RyanData.name}</p>
-        <p>{keyPassion[1]}</p>
+        <p>
+          {keyPassion[0]}: {RyanData.name}
+        </p>
         <p>
           {keyPassion[1]}: {RyanData.passion}
         </p>

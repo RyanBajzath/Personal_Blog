@@ -1,4 +1,4 @@
 export let RyanData = {
-  name: "ryan",
+  name: "Ryan",
   passion: "Development",
 };
