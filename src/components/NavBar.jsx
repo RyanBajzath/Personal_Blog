@@ -18,7 +18,7 @@ function NavBar() {
           to="/"
         >
           <StyledImg
-            src="src\assets\logo.png"
+            src="https://media.discordapp.net/attachments/1148393855918559246/1153539656869232721/image.png?width=550&height=550"
             alt="Logo for Ryan's blog website"
           />
         </StledNavLink>
