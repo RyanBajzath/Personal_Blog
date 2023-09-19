@@ -25,7 +25,7 @@ class ClassComponentBox extends Component {
   render() {
     return (
       <>
-        <h2>Hi, I am a Car!</h2>
+        <h2>Cookie counter!</h2>
         <button onClick={this.incrementClickCount}>Increase number</button>
         <p>You have clicked {this.state.clicks} times</p>
         {this.state.clicks >= 10 ? (
