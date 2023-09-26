@@ -49,7 +49,7 @@ function NavBar() {
 const NavBarDiv = styled.div`
   display: flex;
   height: 10vh;
-  font-size: 25px;
+  /* font-size: 25px; */
   justify-content: space-between; /* Place RightLinksDiv on the right */
   align-items: center; /* Vertically center content */
   padding: 0 20px; /* Add padding for spacing */
@@ -58,6 +58,7 @@ const NavBarDiv = styled.div`
 
 const LogoDiv = styled.div`
   display: flex;
+
 `;
 
 const RightLinksDiv = styled.div`
@@ -76,7 +77,7 @@ const StledNavLink = styled(NavLink)`
 `;
 
 const StyledImg = styled.img`
-  max-height: 100%; /* Adjust as needed */
+
 `;
 
 export default NavBar;

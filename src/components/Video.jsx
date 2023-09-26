@@ -9,7 +9,7 @@ const Video =()=>{
         playing={false}
         volume={.6}
         controls={true}
-        width='50vw'
+        width='50%'
 
 
 
