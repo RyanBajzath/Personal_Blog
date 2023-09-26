@@ -15,9 +15,9 @@ function App() {
       <NavBar />
 {/* <Video/> */}
       <Routes>
-        <Route path="/" element={<LandingPage />} />
-        <Route path="about" element={<AboutPage />} />
-        <Route path="contact" element={<ContactPage />} />
+        <Route exact path="/" element={<LandingPage />} />
+        <Route exact path="about" element={<AboutPage />} />
+        <Route exact path="contact" element={<ContactPage />} />
       </Routes>
       <ClassComponentBox />
     </>

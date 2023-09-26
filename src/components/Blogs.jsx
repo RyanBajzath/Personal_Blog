@@ -75,6 +75,10 @@ const SyledBlog = styled.div`
   border: 5px solid black; /* Apply border to the container */
   width: 80vw;
   padding: 10px;
+  display:flex;
+  flex-direction:column;
+
+  align-items:center;
 `;
 
 const StyledP = styled.p``;
