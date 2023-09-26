@@ -5,14 +5,14 @@ import AboutPage from "./pages/AboutPage";
 import ContactPage from "./pages/ContactPage";
 import NavBar from "./components/NavBar";
 import ClassComponentBox from "./components/ClassComponentCounter";
-import Greetings from "./components/Greetings";
+
 
 
 function App() {
   return (
     <>
       <NavBar />
-      <Greetings/>
+
       <Routes>
         <Route path="/" element={<LandingPage />} />
         <Route path="about" element={<AboutPage />} />
