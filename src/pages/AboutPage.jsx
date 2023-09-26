@@ -1,5 +1,6 @@
 import React from "react";
 import { RyanData } from "../data/RyanData";
+import Video from "../components/Video";
 
 function AboutPage() {
   const keyPassion = Object.keys(RyanData);
@@ -15,6 +16,7 @@ function AboutPage() {
           {keyPassion[1]}: {RyanData.passion}
         </p>
       </div>
+      <Video/>
     </>
   );
 }

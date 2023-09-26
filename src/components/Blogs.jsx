@@ -2,6 +2,7 @@
 import React from "react";
 import { useEffect, useState } from "react";
 import styled from "styled-components";
+import Video from "./Video";
 
 // using an API to create blog posts to emulate getting data from the back end.
 function Blog() {
@@ -43,6 +44,16 @@ function Blog() {
             keep trying and learning then there is growth which is it's own
             reward.
           </StyledP>
+
+        </SyledBlog>
+      </StyledBlogContainer>
+      <StyledBlogContainer>
+        <SyledBlog>
+          <h1>Second Blog</h1>
+          <StyledP>
+           I shall continue to learn and apply what I learned to this blog. I can proceed to make a video so I am doing both, applying what I learned and also teaching it.Please enjoy the video below where I try to teach the concent of JavaScript.
+          </StyledP>
+          <Video />
         </SyledBlog>
       </StyledBlogContainer>
     </>
