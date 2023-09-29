@@ -2,6 +2,9 @@
 import React from "react";
 import { BrowserRouter, Routes, Route, Link, NavLink } from "react-router-dom";
 
+//import js logic
+import whatDayisit_DOMEvent from "./whatDayisIt_DOMEvent"
+
 //Importing styling and Icons
 import styled from "styled-components";
 

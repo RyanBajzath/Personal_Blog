@@ -1,15 +1,16 @@
 import React from "react";
 import ReactPlayer from 'react-player/youtube'
+import styled from "styled-components";
 
 const Video =()=>{
     return(
         <>
-        <ReactPlayer
+        <StyledReactPlayer
         url="https://www.youtube.com/watch?v=V6EgkbWBeB0"
         playing={false}
         volume={.6}
         controls={true}
-        width='50%'
+        light={true}
 
 
 
@@ -19,4 +20,9 @@ const Video =()=>{
         </>
     )
 }
+const StyledReactPlayer = styled(ReactPlayer)`
+max-width:50%;
+/* width:50px; */
+
+`
 export default Video;

@@ -13,7 +13,7 @@ function Blog() {
     fetch("https://baconipsum.com/api/?callback=?")
       .then((res) => res.json())
       .then((data) => {
-        console.log(data);
+        console.log(data[1]);
         setBlog(data);
       })
       .catch((error) => {
@@ -56,6 +56,7 @@ function Blog() {
           <Video />
         </SyledBlog>
       </StyledBlogContainer>
+
     </>
   );
 }
@@ -79,6 +80,7 @@ const SyledBlog = styled.div`
   flex-direction:column;
 
   align-items:center;
+
 `;
 
 const StyledP = styled.p``;
