@@ -1,12 +1,18 @@
-import React from "react";
+import React, { useContext } from "react";
 import { FaRegSun,FaMoon } from "react-icons/fa";
-import styled from "styled-components"
+import styled from "styled-components";
+import { UserContext } from "../App";
+
+
+
 
 
 function Greetings(){
     // Greet the user based on the time of day and perhaps the day of the week.
 
 
+    const user = useContext(UserContext)
+    console.log(user.user)
     //Get the users time of day
     let hour = new Date().getHours()
 
@@ -19,9 +25,9 @@ function Greetings(){
     }
     let greeting
     if(hour>=6&& hour<=17){
-        greeting = "Good day"
+        greeting = `Good day,${user.user} `
     } else{
-        greeting = "Good night"
+        greeting = `Good night, ${user.user} `
     }
 
 return(<StyledGreeting><h3>{greeting}</h3><h3>{timeOfDay=="day"? <FaRegSun/>:<FaMoon/>}</h3></StyledGreeting>)
