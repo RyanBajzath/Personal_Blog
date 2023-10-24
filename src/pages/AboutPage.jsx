@@ -1,13 +1,24 @@
-import React from "react";
+import React, {useEffect, useLayoutEffect, useState} from "react";
 import { RyanData } from "../data/RyanData";
+import UseReducerCounter from "../components/UseReducerCounter";
+
 
 
 function AboutPage() {
+  // useEffect(()=>{
+  //   fetch(`..\data\data.txt`)
+
+  //   .then(rawData=>{console.log(rawData)})
+
+  //   },[])
+
+
   const keyPassion = Object.keys(RyanData);
 
   return (
     <>
       <div>
+        <UseReducerCounter/>
         <h1>AboutPage</h1>
         <p>
           {keyPassion[0]}: {RyanData.name}
