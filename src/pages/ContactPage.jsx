@@ -2,8 +2,14 @@
 //I will set my states what will hold the data
 // Then I will make the JSX
 // Then I will make the logic for the submit
-import React, { useState, useEffect} from "react";
+import React, { useState, useEffect, useContext} from "react";
+import { UserContext } from "../App";
+
 function ContactPage() {
+  const user = useContext(UserContext)
+  const userName = user.userName;
+  console.log(userName)
+
   const [name, setName] = useState("")
   const [comment, setComment] = useState("")
 
@@ -26,7 +32,7 @@ setComment("")
 
   return <form onSubmit={handleSubmit}>
     <label>Enter Your name:
-    <input type="text" name="name" value={name} onChange={(e)=>setName(e.target.value)}/>
+    <input type="text" name="name" value={userName} onChange={(e)=>setName(e.target.value)}/>
     </label>
     <label>Enter Your comment
       <input type="textbox" name="comment" value={comment} onChange={e=>setComment(e.target.value)}/>

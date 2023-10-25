@@ -7,7 +7,20 @@ import NavBar from "./components/NavBar";
 // import Video from "./components/Video";
 import ClassComponentBox from "./components/ClassComponentCounter";
 
-export const UserContext = createContext(null)
+export const UserContext = createContext()
+
+function UserProvider({children }){
+  const [userName, setUserName] = useState(`guest, Please eneter your name!`);
+
+  const updateUserName = (newUserName) =>{
+    setUserName(newUserName)
+  }
+  return(
+    <UserContext.Provider value={{userName, updateUserName}}>
+      {children }
+    </UserContext.Provider >
+  )
+}
 
 
 
@@ -15,7 +28,7 @@ export const UserContext = createContext(null)
 function App() {
   return (
     <>
-<UserContext.Provider value={{user:"username"}}>
+<UserProvider>
       <NavBar />
 
       <Routes>
@@ -24,7 +37,7 @@ function App() {
         <Route exact path="contact" element={<ContactPage />} />
       </Routes>
       <ClassComponentBox />
-      </UserContext.Provider>
+      </UserProvider>
 
     </>
   );

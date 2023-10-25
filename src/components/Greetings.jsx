@@ -1,4 +1,4 @@
-import React, { useContext } from "react";
+import React, { useContext, useState } from "react";
 import { FaRegSun,FaMoon } from "react-icons/fa";
 import styled from "styled-components";
 import { UserContext } from "../App";
@@ -12,7 +12,11 @@ function Greetings(){
 
 
     const user = useContext(UserContext)
-    console.log(user.user)
+    const userName = user.userName;
+    const updateUserName = user.updateUserName
+    const [customName, setCustomName] = useState(""); // State for the custom name input
+    console.log(`this is the text holder ${customName}`)
+
     //Get the users time of day
     let hour = new Date().getHours()
 
@@ -25,12 +29,31 @@ function Greetings(){
     }
     let greeting
     if(hour>=6&& hour<=17){
-        greeting = `Good day,${user.user} `
+        greeting = `Good day, ${userName} `
     } else{
-        greeting = `Good night, ${user.user} `
+        greeting = `Good night, ${userName} `
+    }
+const handleUserName = (event)=>{
+    setCustomName(event.target.value)
+
+}
+    const changeUserName=(e)=>{
+
+        updateUserName(customName)
+        setCustomName("")
+        console.log(`this is the userName holder ${userName}`)
+
+
+
     }
 
-return(<StyledGreeting><h3>{greeting}</h3><h3>{timeOfDay=="day"? <FaRegSun/>:<FaMoon/>}</h3></StyledGreeting>)
+return(<StyledGreeting>
+    <h3>{greeting}</h3>
+    <h3>{timeOfDay=="day"? <FaRegSun/>:<FaMoon/>}
+    </h3>
+    <input type="text" onChange={handleUserName} value={customName}/>
+    <button onClick={changeUserName}> changeUserName</button>
+    </StyledGreeting>)
 
 
 
