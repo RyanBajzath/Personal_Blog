@@ -34,11 +34,11 @@ const StyledNavContainer = styled.div`
   display: flex;
   justify-content: space-between;
   flex-wrap: wrap;
-  margin-bottom: 100px;
 
   @media (max-width: 768px) {
     justify-content: center;
     align-items: center;
+    margin-bottom: 10vh;
   }
 `;
 
