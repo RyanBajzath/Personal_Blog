@@ -12,7 +12,7 @@ function NavBar() {
     <>
       <StyledNavContainer>
         <StyledLeftIcons>
-          <StyledNavLink to="/">
+          <StyledNavLink to="/" activeClassName="active">
             <StyledLogo src={RyanLogo} alt="Ryan's Logo" />
           </StyledNavLink>
         </StyledLeftIcons>
@@ -46,32 +46,43 @@ const StyledNavLink = styled(NavLink)`
   }
 `;
 
-const StyledLeftIcons = styled.div``;
-
-const StyledRightIcon = styled.div`
-  @media (max-width: 600px) {
+const StyledLeftIcons = styled.div`
+  @media (max-width: 768px) {
     display: flex; /* Add this line */
     flex-direction: row;
     justify-content: center;
-    margin: auto; /* Add this line */
+    margin: auto;
+  }
+`;
+
+const StyledRightIcon = styled.div`
+  @media (max-width: 768px) {
+    display: flex; /* Add this line */
+    flex-direction: row;
+    justify-content: center;
+    margin: auto;
   }
 `;
 
 const StyledLogo = styled.img`
   height: 70px;
   width: 208px;
+  &.active {
+    filter: grayscale(100%);
+  }
 `;
 
 const StyledMdPerson = styled(MdPerson)`
   width: 82px;
   height: 70px;
-  margin: auto; /* Add this line */
+
+  margin: auto;
 `;
 
 const StyledIoFolderSharp = styled(IoFolderSharp)`
   width: 82px;
   height: 70px;
-  margin: auto; /* Add this line */
+  margin: auto;
 `;
 
 export default NavBar;
