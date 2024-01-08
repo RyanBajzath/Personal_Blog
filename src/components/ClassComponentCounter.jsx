@@ -1,4 +1,5 @@
 import React, { Component } from "react";
+import styled from "styled-components";
 
 class ClassComponentBox extends Component {
   constructor(props) {
@@ -25,16 +26,24 @@ class ClassComponentBox extends Component {
   render() {
     return (
       <>
-        <h2>Cookie counter!</h2>
-        <button onClick={this.incrementClickCount}>Increase number</button>
-        <p>You have clicked {this.state.clicks} times</p>
-        {this.state.clicks >= 10 ? (
-          <p>You currently have a 🍪</p>
-        ) : (
-          <p>Click 10 time for a cookie!</p>
-        )}
+        <CookieCounterDiv>
+          <h2>Cookie counter!</h2>
+          <button onClick={this.incrementClickCount}>Increase number</button>
+          <p>You have clicked {this.state.clicks} times</p>
+          {this.state.clicks >= 10 ? (
+            <p>You currently have a 🍪</p>
+          ) : (
+            <p>Click 10 time for a cookie!</p>
+          )}
+        </CookieCounterDiv>
       </>
     );
   }
 }
+
+const CookieCounterDiv = styled.div`
+  margin-top: 25%;
+  text-align: center;
+`;
+
 export default ClassComponentBox;

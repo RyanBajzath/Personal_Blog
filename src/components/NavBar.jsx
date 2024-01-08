@@ -14,6 +14,9 @@ function NavBar() {
 import React from "react";
 import { BrowserRouter, Routes, Route, Link, NavLink } from "react-router-dom";
 
+//import js logic
+import whatDayisit_DOMEvent from "./whatDayisIt_DOMEvent"
+
 //Importing styling and Icons
 import styled from "styled-components";
 
@@ -72,7 +75,7 @@ const NavBarDiv = styled.div`
 const NavBarDiv = styled.div`
   display: flex;
   height: 10vh;
-  font-size: 25px;
+  /* font-size: 25px; */
   justify-content: space-between; /* Place RightLinksDiv on the right */
   align-items: center; /* Vertically center content */
   padding: 0 20px; /* Add padding for spacing */
@@ -81,6 +84,7 @@ const NavBarDiv = styled.div`
 
 const LogoDiv = styled.div`
   display: flex;
+
 `;
 
 const RightLinksDiv = styled.div`
@@ -99,7 +103,7 @@ const StledNavLink = styled(NavLink)`
 `;
 
 const StyledImg = styled.img`
-  max-height: 100%; /* Adjust as needed */
+
 `;
 
 >>>>>>> 9bcded640ebc581469f754c7c8155e08b013f287
