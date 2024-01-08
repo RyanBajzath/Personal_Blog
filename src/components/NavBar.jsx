@@ -1,110 +1,77 @@
-<<<<<<< HEAD
 import React from "react";
 import { NavLink } from "react-router-dom";
 import styled from "styled-components";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { faUser } from "@fortawesome/free-solid-svg-icons";
+import RyanLogo from "./Ryan.svg"; // Adjust the path accordingly
+import { MdPerson } from "react-icons/md";
+import { IoFolderSharp } from "react-icons/io5";
 
 function NavBar() {
   return (
-    <NavBarDiv>
-      <NavLink to="/">Home</NavLink>
-      <NavLink to="/about">about</NavLink>
-      <NavLink to="/contact">contact</NavLink>
-=======
-//Importing React logic
-import React from "react";
-import { BrowserRouter, Routes, Route, Link, NavLink } from "react-router-dom";
-
-//import js logic
-import whatDayisit_DOMEvent from "./whatDayisIt_DOMEvent"
-
-//Importing styling and Icons
-import styled from "styled-components";
-
-//This will be the main Navigation bar with the routes made in App.jsx. It will go into App to be present in each page.
-function NavBar() {
-  return (
-    <NavBarDiv>
-      <LogoDiv>
-        {" "}
-        <StledNavLink
-          style={({ isActive }) => {
-            return isActive ? { opacity: "0.8" } : { opacity: "1" };
-          }}
-          to="/"
-        >
-          <StyledImg
-            src="https://media.discordapp.net/attachments/1148393855918559246/1153539656869232721/image.png?width=550&height=550"
-            alt="Logo for Ryan's blog website"
-          />
-        </StledNavLink>
-      </LogoDiv>
-      <RightLinksDiv>
-        <StledNavLink
-          style={({ isActive }) => {
-            return isActive ? { color: "Gray" } : { color: "black" };
-          }}
-          to="/about"
-        >
-          about
-        </StledNavLink>
-        <StledNavLink
-          to="/contact"
-          style={({ isActive }) => {
-            return isActive ? { color: "Gray" } : { color: "black" };
-          }}
-        >
-          contact
-        </StledNavLink>
-      </RightLinksDiv>
->>>>>>> 9bcded640ebc581469f754c7c8155e08b013f287
-    </NavBarDiv>
+    <>
+      <StyledNavContainer>
+        <StyledLeftIcons>
+          <StyledNavLink to="/">
+            <StyledLogo src={RyanLogo} alt="Ryan's Logo" />
+          </StyledNavLink>
+        </StyledLeftIcons>
+        <StyledRightIcon>
+          <StyledNavLink to="/about">
+            <StyledMdPerson />
+          </StyledNavLink>
+          <StyledNavLink to="/contact">
+            <StyledIoFolderSharp />
+          </StyledNavLink>
+        </StyledRightIcon>
+      </StyledNavContainer>
+    </>
   );
 }
 
-<<<<<<< HEAD
-const NavBarDiv = styled.div`
-  /* height: 10vh; */
-  background: #ffffe0;
+const StyledNavContainer = styled.div`
+  height: 100px;
   display: flex;
-  justify-content: center;
-  gap: 10vw;
-  outline: #4e534e47 solid 1px;
-`;
-=======
-//Styling for NavBar here used custom syling, styles will be scoped to the component.
-const NavBarDiv = styled.div`
-  display: flex;
-  height: 10vh;
-  /* font-size: 25px; */
-  justify-content: space-between; /* Place RightLinksDiv on the right */
-  align-items: center; /* Vertically center content */
-  padding: 0 20px; /* Add padding for spacing */
-  margin-top: 20px;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  margin-bottom: 100px;
 `;
 
-const LogoDiv = styled.div`
-  display: flex;
+const StyledNavLink = styled(NavLink)`
+  text-decoration: none;
+  color: black;
 
-`;
-
-const RightLinksDiv = styled.div`
-  display: flex;
-  gap: 20px; /* Add spacing between links */
-`;
-
-const StledNavLink = styled(NavLink)`
-  display: flex;
-  align-items: center;
-  color: black; /* Set the color for unvisited links */
-  text-decoration: none; /* Remove the underline */
-  &:visited {
-    color: black; /* Set the color for visited links & is a pseudoclass */
+  &.active {
+    color: grey;
   }
 `;
 
-const StyledImg = styled.img`
+const StyledLeftIcons = styled.div``;
 
+const StyledRightIcon = styled.div`
+  @media (max-width: 600px) {
+    display: flex; /* Add this line */
+    flex-direction: row;
+    justify-content: center;
+    margin: auto; /* Add this line */
+  }
 `;
 
->>>>>>> 9bcded640ebc581469f754c7c8155e08b013f287
+const StyledLogo = styled.img`
+  height: 70px;
+  width: 208px;
+`;
+
+const StyledMdPerson = styled(MdPerson)`
+  width: 82px;
+  height: 70px;
+  margin: auto; /* Add this line */
+`;
+
+const StyledIoFolderSharp = styled(IoFolderSharp)`
+  width: 82px;
+  height: 70px;
+  margin: auto; /* Add this line */
+`;
+
 export default NavBar;

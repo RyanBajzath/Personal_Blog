@@ -1,35 +1,15 @@
-import React, {useEffect, useLayoutEffect, useState} from "react";
-import { RyanData } from "../data/RyanData";
-import UseReducerCounter from "../components/UseReducerCounter";
-
-
+import React from "react";
+import styled from "styled-components";
 
 function AboutPage() {
-  // useEffect(()=>{
-  //   fetch(`..\data\data.txt`)
-
-  //   .then(rawData=>{console.log(rawData)})
-
-  //   },[])
-
-
-  const keyPassion = Object.keys(RyanData);
-
   return (
     <>
-      <div>
-        <UseReducerCounter/>
+      <StledAboutPage>
         <h1>AboutPage</h1>
-        <p>
-          {keyPassion[0]}: {RyanData.name}
-        </p>
-        <p>
-          {keyPassion[1]}: {RyanData.passion}
-        </p>
-      </div>
-
+      </StledAboutPage>
     </>
   );
->>>>>>> 9bcded640ebc581469f754c7c8155e08b013f287
 }
+
+const StledAboutPage = styled.div``;
 export default AboutPage;
