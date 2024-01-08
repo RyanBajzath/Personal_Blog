@@ -35,6 +35,11 @@ const StyledNavContainer = styled.div`
   justify-content: space-between;
   flex-wrap: wrap;
   margin-bottom: 100px;
+
+  @media (max-width: 768px) {
+    justify-content: center;
+    align-items: center;
+  }
 `;
 
 const StyledNavLink = styled(NavLink)`
@@ -48,19 +53,15 @@ const StyledNavLink = styled(NavLink)`
 
 const StyledLeftIcons = styled.div`
   @media (max-width: 768px) {
-    display: flex; /* Add this line */
+    display: flex;
     flex-direction: row;
-    justify-content: center;
-    margin: auto;
   }
 `;
 
 const StyledRightIcon = styled.div`
   @media (max-width: 768px) {
-    display: flex; /* Add this line */
+    display: flex;
     flex-direction: row;
-    justify-content: center;
-    margin: auto;
   }
 `;
 
@@ -74,15 +75,12 @@ const StyledLogo = styled.img`
 
 const StyledMdPerson = styled(MdPerson)`
   width: 82px;
-  height: 70px;
-
-  margin: auto;
+  height: 73px;
 `;
 
 const StyledIoFolderSharp = styled(IoFolderSharp)`
   width: 82px;
   height: 70px;
-  margin: auto;
 `;
 
 export default NavBar;
