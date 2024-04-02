@@ -1,0 +1,46 @@
+[
+
+    {
+        "id":1,
+        "title": "Video games",
+        "bio":"Video games has given me a lot of joy over the years, it was a means to socilize, relax, think, appreciate art and I even got into map and 3d design"
+        ,"src":"src/components/game.png"
+    },
+    {
+        "id":2,
+        "title": "Walking",
+        "bio":"Montreal is walkable and the population is not too big, I wanted something to get me out of the house but that did not require any planning. I wanted to appreciate something simple that was not a distraction to get my brain in a relaxed state."
+        ,"src":"src/components/walking.png"
+    },
+    {
+        "id":3,
+        "title": "Cooking",
+        "bio":"I like simple hobbies I can improve on, that I can do when I want and that adds to my life. Getting better at cooking is great for ones health, wallet and mind"
+        ,"src":"src/components/cooking.png"
+    },
+    {
+        "id":4,
+        "title": "Painting",
+        "bio":"Something again that I can do by myslef, painting. I like the ability to do it when I want. This also helped a lot for design, creating a color pallet and a plan for conitnuity."
+        ,"src":"src/components/painting.png"
+    },
+    {
+        "id":5,
+        "title": "Drawing",
+        "bio":"Taking a step back from painting and making it even more simple, I got into drawing. Now all I need is a pen and paper. Perhaps with a goal to create my own little story."
+        ,"src":"src/components/drawing.png"
+    },
+    {
+        "id":6,
+        "title": "Reading",
+        "bio":"2018 I decided to make my new years resolution to read and I read every day since then. It helps a lot with learning too and being okay being bored. I also appreciate how there is a beggining middle and end rather then a loop like scolling on a phone."
+        ,"src":"src/components/reading.png"
+    },
+    {
+        "id":7,
+        "title": "Learning something new",
+        "bio":"I always have a feeling I must learn something and ideally have synergy with my previous skillsets. Now I am focusing on things that help with coding and design with personal projects"
+        ,"src":"src/components/brain.png"
+    }
+
+]
