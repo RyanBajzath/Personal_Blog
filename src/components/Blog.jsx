@@ -1,23 +1,21 @@
 //Importing React and States
-import React,{useState} from "react";
+import React, { useState } from "react";
 import styled from "styled-components";
 import { FaArrowLeft, FaArrowRightLong } from "react-icons/fa6";
 import blogsData from "./blogs.json";
 // using an API to create blog posts to emulate getting data from the back end.
 
 function Blog() {
+  const [blogs, setBlogs] = useState(blogsData);
 
-  const[blogs, setBlogs]=useState(blogsData)
+  const [blogindex, setBlogIndex] = useState(0);
 
-  const[blogindex,setBlogIndex]=useState(0)
-
-  function handleRightButtonClick(){
-    setBlogIndex((prevState)=>(prevState + 1)%blogs.length)
+  function handleRightButtonClick() {
+    setBlogIndex((prevState) => (prevState + 1) % blogs.length);
   }
-  function handleLeftButtonClick(){
+  function handleLeftButtonClick() {
     setBlogIndex((prevIndex) => (prevIndex - 1 + blogs.length) % blogs.length);
   }
-
 
   return (
     <BlogContainer>
@@ -25,13 +23,15 @@ function Blog() {
         <FaArrowLeft />
       </LeftArrowContainer>
       <BlogMain>
-        <BlogTop></BlogTop>
+        <BlogTop>
+          <StyledImg src={blogs[blogindex].src} />
+        </BlogTop>
         <Bottom>
           <h1>{blogs[blogindex].title}</h1>
           <p>{blogs[blogindex].bio}</p>
         </Bottom>
       </BlogMain>
-      <RightArrowContainer onClick={handleRightButtonClick} >
+      <RightArrowContainer onClick={handleRightButtonClick}>
         <FaArrowRightLong />
       </RightArrowContainer>
     </BlogContainer>
@@ -60,11 +60,23 @@ const BlogTop = styled.div`
   border-radius: 16px;
   height: 50%;
   border: black 3px solid;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+`;
+
+const StyledImg = styled.img`
+  height: 95%;
 `;
 
 const Bottom = styled.div`
   border-radius: 16px;
-
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  gap:10px;
+  padding:15px;
+  align-items: center;
   height: 50%;
   border: black 3px solid;
 `;
