@@ -42,8 +42,11 @@ const BlogContainer = styled.div`
   display: flex;
   align-items: center;
 `;
-const LeftArrowContainer = styled.button``;
-const RightArrowContainer = styled.button``;
+const LeftArrowContainer = styled.button`
+all: unset;
+`;
+const RightArrowContainer = styled.button`
+all: unset`;
 
 const BlogMain = styled.div`
   border-radius: 16px;
