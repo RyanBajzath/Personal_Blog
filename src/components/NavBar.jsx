@@ -12,7 +12,7 @@ function NavBar() {
     <>
       <StyledNavContainer>
         <StyledLeftIcons>
-          <StyledNavLink to="/" activeClassName="active">
+          <StyledNavLink to="/" className="active">
             <StyledLogo src={RyanLogo} alt="Ryan's Logo" />
           </StyledNavLink>
         </StyledLeftIcons>

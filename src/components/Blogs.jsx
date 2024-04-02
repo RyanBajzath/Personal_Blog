@@ -1,13 +1,16 @@
 //Importing React and States
-import React from "react";
+import React, { useState, useEffect } from "react";
 import styled from "styled-components";
 import Blog from "./Blog";
 
-// using an API to create blog posts to emulate getting data from the back end.
+import blogsData from "./blogs.json";
+
 function Blogs() {
+
+
   return (
     <BlogsContainer>
-      <Blog />
+      <Blog  />
     </BlogsContainer>
   );
 }
