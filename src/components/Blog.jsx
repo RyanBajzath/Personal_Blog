@@ -75,10 +75,11 @@ const BlogMain = styled.div`
 const BlogTop = styled.div`
   border-radius: 16px;
   height: 50%;
-  border: black 3px solid;
+  border: #000000 3px solid;
   display: flex;
   justify-content: center;
   align-items: center;
+  background:#f5f1f1;
 `;
 
 const StyledImg = styled.img`

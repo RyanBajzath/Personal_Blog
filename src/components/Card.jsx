@@ -18,7 +18,7 @@ const CardContainer = styled.div`
   border-radius: 16px;
   bottom: 0;
 
-  background: #f5f5f5;
+  background: #dfdddd;
   &:hover {
     transform: scale(1.1); /* Adjust the scale factor as needed for more zoom */
 
