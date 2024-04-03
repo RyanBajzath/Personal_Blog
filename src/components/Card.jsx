@@ -1,11 +1,11 @@
 import React from "react";
 import styled from "styled-components";
 
-function Card() {
+function Card({name}) {
   return (
     <CardContainer>
       <CardTopContainer>
-        <p>Hello</p>
+        <p>{name}</p>
       </CardTopContainer>
     </CardContainer>
   );
@@ -32,6 +32,7 @@ const CardContainer = styled.div`
     height: 193px;
     width: 128px;
   }
+
 `;
 
 const CardTopContainer = styled.div`

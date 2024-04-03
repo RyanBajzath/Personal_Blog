@@ -1,19 +1,32 @@
 import React from "react";
 import styled from "styled-components";
 import Card from "./Card";
+import react, {useState,useContext} from "react";
+import CardThemeContext from "./CardThemeContext";
+
+
+
+
 
 function Cards() {
-  return (
-    <CardsContainer>
-      <CardRotated>
-        <Card />
-      </CardRotated>
-      <Card />
-      <CardRotated>
-        <Card />
-      </CardRotated>
-    </CardsContainer>
-  );
+
+const{activeCard, setActiveCard} = useContext(CardThemeContext);
+
+
+return (
+  <CardsContainer>
+    <CardRotated onClick={()=>{setActiveCard("hobbies")}} name="hobbies" value="hobbies"    style={{ transform: activeCard === "hobbies" ? "scale(1.1)" : "" }}>
+
+      <Card name="hobbies"  />
+    </CardRotated>
+    <div onClick={()=>{setActiveCard("work")}} style={{ transform: activeCard === "work" ? "scale(1.1)" : "" }}>
+    <Card name="work" />
+    </div>
+    <CardRotated  onClick={()=>{setActiveCard("projects")}} style={{ transform: activeCard === "projects" ? "scale(1.1)" : "" }}>
+      <Card name="projects" />
+    </CardRotated>
+  </CardsContainer>
+);
 }
 
 const CardsContainer = styled.div`
