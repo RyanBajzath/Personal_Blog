@@ -1,14 +1,27 @@
 //Importing React and States
-import React, { useState } from "react";
+import React, { useState, useContext,useEffect } from "react";
 import styled from "styled-components";
 import { FaArrowLeft, FaArrowRightLong } from "react-icons/fa6";
 import blogsData from "./blogs.json";
+import CardThemeContext from "./CardThemeContext";
 // using an API to create blog posts to emulate getting data from the back end.
 
 function Blog() {
-  const [blogs, setBlogs] = useState(blogsData);
 
+  const {activeCard } = useContext(CardThemeContext);
+console.log(activeCard)
+
+  const [blogs, setBlogs] = useState(blogsData[activeCard]);
   const [blogindex, setBlogIndex] = useState(0);
+
+  useEffect(()=>{
+    setBlogs(blogsData[activeCard]);
+    setBlogIndex(0);
+
+  },[activeCard])
+
+
+
 
   function handleRightButtonClick() {
     setBlogIndex((prevState) => (prevState + 1) % blogs.length);

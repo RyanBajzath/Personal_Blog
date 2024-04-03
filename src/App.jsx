@@ -5,10 +5,12 @@ import AboutPage from "./pages/AboutPage";
 import ContactPage from "./pages/ContactPage";
 import NavBar from "./components/NavBar";
 import styled from "styled-components";
+import { CardThemeProvider } from "./components/CardThemeContext";
 
 function App() {
   return (
     <>
+    <CardThemeProvider>
       <NavBar />
       <PageContent>
         <Routes>
@@ -17,6 +19,7 @@ function App() {
           <Route exact path="contact" element={<ContactPage />} />
         </Routes>
       </PageContent>
+      </CardThemeProvider>
     </>
   );
 }
