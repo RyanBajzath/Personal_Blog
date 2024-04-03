@@ -13,16 +13,30 @@ function Cards() {
 const{activeCard, setActiveCard} = useContext(CardThemeContext);
 
 
-return (
-  <CardsContainer>
-    <CardRotated onClick={()=>{setActiveCard("hobbies")}} name="hobbies" value="hobbies"    style={{ transform: activeCard === "hobbies" ? "scale(1.1)" : "" }}>
+  // Custom style to apply when a card is selected
+  const mystyle = {
+    transform: "scale(1.1)",
+    zIndex: 2
+  };
 
-      <Card name="hobbies"  />
-    </CardRotated>
-    <div onClick={()=>{setActiveCard("work")}} style={{ transform: activeCard === "work" ? "scale(1.1)" : "" }}>
+
+
+return (
+
+
+  <CardsContainer>
+     <CardRotated
+        onClick={() => setActiveCard("hobbies")}
+        name="hobbies"
+        value="hobbies"
+        style={activeCard === "hobbies" ? mystyle : {}}
+      >
+        <Card name="hobbies" />
+      </CardRotated>
+    <div onClick={()=>{setActiveCard("work")}}   style={activeCard === "work" ? mystyle : {}}>
     <Card name="work" />
     </div>
-    <CardRotated  onClick={()=>{setActiveCard("projects")}} style={{ transform: activeCard === "projects" ? "scale(1.1)" : "" }}>
+    <CardRotated  onClick={()=>{setActiveCard("projects")}} style={activeCard === "projects" ? mystyle : {}}>
       <Card name="projects" />
     </CardRotated>
   </CardsContainer>
@@ -38,6 +52,19 @@ const CardsContainer = styled.div`
 const CardRotated = styled.div`
   align-items: flex-end;
   align-content: flex-end;
+  margin: 20px -20px; /* Adjust the negative margin as needed for more overlap */
+  &:first-child {
+    transform: rotate(-15deg); /* Adjust the rotation angle as needed */
+  }
+  &:nth-child(3) {
+    transform: rotate(15deg); /* Adjust the rotation angle as needed */
+  }
+`;
+
+const SelectedCardRotated = styled.div`
+  align-items: flex-end;
+  align-content: flex-end;
+  scale:1.1;
   margin: 20px -20px; /* Adjust the negative margin as needed for more overlap */
   &:first-child {
     transform: rotate(-15deg); /* Adjust the rotation angle as needed */
