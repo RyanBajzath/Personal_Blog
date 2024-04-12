@@ -1,6 +1,8 @@
 import React from "react";
 import styled from "styled-components";
 
+//I want to see which card is selected then give it it's own styling
+
 function Card({name}) {
   return (
     <CardContainer>
@@ -18,7 +20,7 @@ const CardContainer = styled.div`
   border-radius: 16px;
   bottom: 0;
 
-  background: #dfdddd;
+  background: #f7f7f7;
   &:hover {
     transform: scale(1.1); /* Adjust the scale factor as needed for more zoom */
 
