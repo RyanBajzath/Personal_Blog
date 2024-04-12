@@ -1,119 +1,116 @@
 {
     "hobbies":[
-
-    {
-        "id":1,
-        "title": "Video games",
-        "bio":"Video games has given me a lot of joy over the years, it was a means to socilize, relax, think, appreciate art and I even got into map and 3d design"
-        ,"src":"https://media.discordapp.net/attachments/1148393855918559246/1224838658629046393/game.png?ex=661ef2e4&is=660c7de4&hm=cfff376a1c05af3885c78f3cdade7b39fc89d0167968b5f193fda76dcf1af569&=&format=webp&quality=lossless"
-    },
-    {
-        "id":2,
-        "title": "Walking",
-        "bio":"Montreal is walkable and the population is not too big, I wanted something to get me out of the house but that did not require any planning. I wanted to appreciate something simple that was not a distraction to get my brain in a relaxed state."
-        ,"src":"https://media.discordapp.net/attachments/1148393855918559246/1224838691390750730/walking.png?ex=661ef2ec&is=660c7dec&hm=98ea4b691fd4af132e6d6cb4e466c454c98c0bea9ae5b4a3db2ac3d68594f1ec&=&format=webp&quality=lossless"
-    },
-    {
-        "id":3,
-        "title": "Cooking",
-        "bio":"I like simple hobbies I can improve on, that I can do when I want and that adds to my life. Getting better at cooking is great for ones health, wallet and mind"
-        ,"src":"https://media.discordapp.net/attachments/1148393855918559246/1224838674261348352/cooking.png?ex=661ef2e8&is=660c7de8&hm=1d8fc5ebc38892c76c8d220c328ac3eb4c20792a0a7650d61f45e79e640c2967&=&format=webp&quality=lossless"
-    },
-    {
-        "id":4,
-        "title": "Painting",
-        "bio":"Something again that I can do by myslef, painting. I like the ability to do it when I want. This also helped a lot for design, creating a color pallet and a plan for conitnuity."
-        ,"src":"https://media.discordapp.net/attachments/1148393855918559246/1224838679256629338/painting.png?ex=661ef2e9&is=660c7de9&hm=352651b417e2df19c7ec6e48d367c11b73f1e9392ceb8391567c461a60870fb6&=&format=webp&quality=lossless&width=350&height=350"
-    },
-    {
-        "id":5,
-        "title": "Drawing",
-        "bio":"Taking a step back from painting and making it even more simple, I got into drawing. Now all I need is a pen and paper. Perhaps with a goal to create my own little story."
-        ,"src":"https://media.discordapp.net/attachments/1148393855918559246/1224838643642925137/drawing.png?ex=661ef2e1&is=660c7de1&hm=10442195d5c322cb5f8e13e64980de884439f6815d2d1d7f553a5b265f658e9d&=&format=webp&quality=lossless"
-    },
-    {
-        "id":6,
-        "title": "Reading",
-        "bio":"2018 I decided to make my new years resolution to read and I read every day since then. It helps a lot with learning too and being okay being bored. I also appreciate how there is a beggining middle and end rather then a loop like scolling on a phone."
-        ,"src":"https://media.discordapp.net/attachments/1148393855918559246/1224838686152065055/reading.png?ex=661ef2eb&is=660c7deb&hm=08d503d0295fa33ebd63f30714a38d250271a4a60a03af123cb76452a0d64616&=&format=webp&quality=lossless"
-    },
-    {
-        "id":7,
-        "title": "Learning",
-        "bio":"I always have a feeling I must learn something and ideally have synergy with my previous skillsets. Now I am focusing on things that help with coding and design with personal projects"
-        ,"src":"https://media.discordapp.net/attachments/1148393855918559246/1224838663536640081/brain.png?ex=661ef2e5&is=660c7de5&hm=30e9cf8705bb29d3435d9a0965d2b7f84216d957dcd27b666fd17a09b7890bd9&=&format=webp&quality=lossless"
-    }
+        {
+            "id":1,
+            "title": "Video games",
+            "bio":"Video games have given me a lot of joy over the years, it was a means to socialize, relax, think, appreciate art, and I even got into map and 3D design",
+            "src":"https://media.discordapp.net/attachments/1148393855918559246/1224838658629046393/game.png?ex=661ef2e4&is=660c7de4&hm=cfff376a1c05af3885c78f3cdade7b39fc89d0167968b5f193fda76dcf1af569&=&format=webp&quality=lossless"
+        },
+        {
+            "id":2,
+            "title": "Walking",
+            "bio":"Combining resting my mind after learning, moving, something I can do on my own with minimal planning and that will also benefit me mentally and physically",
+            "src":"https://media.discordapp.net/attachments/1148393855918559246/1224838691390750730/walking.png?ex=661ef2ec&is=660c7dec&hm=98ea4b691fd4af132e6d6cb4e466c454c98c0bea9ae5b4a3db2ac3d68594f1ec&=&format=webp&quality=lossless"
+        },
+        {
+            "id":3,
+            "title": "Cooking",
+            "bio":"I like simple hobbies I can improve on, that I can do when I want and that adds to my life. Getting better at cooking is great for one's health, wallet, and mind",
+            "src":"https://media.discordapp.net/attachments/1148393855918559246/1224838674261348352/cooking.png?ex=661ef2e8&is=660c7de8&hm=1d8fc5ebc38892c76c8d220c328ac3eb4c20792a0a7650d61f45e79e640c2967&=&format=webp&quality=lossless"
+        },
+        {
+            "id":4,
+            "title": "Painting",
+            "bio":"Something again that I can do by myself, painting. I like the ability to do it when I want. This also helped a lot for design, creating a color palette and a plan for continuity.",
+            "src":"https://media.discordapp.net/attachments/1148393855918559246/1224838679256629338/painting.png?ex=661ef2e9&is=660c7de9&hm=352651b417e2df19c7ec6e48d367c11b73f1e9392ceb8391567c461a60870fb6&=&format=webp&quality=lossless&width=350&height=350"
+        },
+        {
+            "id":5,
+            "title": "Drawing",
+            "bio":"Taking a step back from painting and making it even more simple, I got into drawing. Now all I need is a pen and paper. Perhaps with a goal to create my own little story.",
+            "src":"https://media.discordapp.net/attachments/1148393855918559246/1224838643642925137/drawing.png?ex=661ef2e1&is=660c7de1&hm=10442195d5c322cb5f8e13e64980de884439f6815d2d1d7f553a5b265f658e9d&=&format=webp&quality=lossless"
+        },
+        {
+            "id":6,
+            "title": "Reading",
+            "bio":"A 2018 New Year's resolution that stuck, the simplicity of the medium yet complexity in content both relaxes and brings my brain on adventures.",
+            "src":"https://media.discordapp.net/attachments/1148393855918559246/1224838686152065055/reading.png?ex=661ef2eb&is=660c7deb&hm=08d503d0295fa33ebd63f30714a38d250271a4a60a03af123cb76452a0d64616&=&format=webp&quality=lossless"
+        },
+        {
+            "id":7,
+            "title": "Learning",
+            "bio":"I always have a feeling I must learn something and ideally have synergy with my previous skillsets. Now I am focusing on things that help with coding and design with personal projects",
+            "src":"https://media.discordapp.net/attachments/1148393855918559246/1224838663536640081/brain.png?ex=661ef2e5&is=660c7de5&hm=30e9cf8705bb29d3435d9a0965d2b7f84216d957dcd27b666fd17a09b7890bd9&=&format=webp&quality=lossless"
+        }
     ],
     "projects":[
-
         {
             "id":1,
             "title": "Project 1",
-            "bio":"Video games has given me a lot of joy over the years, it was a means to socilize, relax, think, appreciate art and I even got into map and 3d design"
-            ,"src":"https://media.discordapp.net/attachments/1148393855918559246/1224838658629046393/game.png?ex=661ef2e4&is=660c7de4&hm=cfff376a1c05af3885c78f3cdade7b39fc89d0167968b5f193fda76dcf1af569&=&format=webp&quality=lossless"
+            "bio":"My first project was a cat game using DOM manipulation, it was messy",
+            "src":"https://media.discordapp.net/attachments/1148393855918559246/1224838658629046393/game.png?ex=661ef2e4&is=660c7de4&hm=cfff376a1c05af3885c78f3cdade7b39fc89d0167968b5f193fda76dcf1af569&=&format=webp&quality=lossless"
         },
         {
             "id":2,
             "title": "Project 2",
-            "bio":"Montreal is walkable and the population is not too big, I wanted something to get me out of the house but that did not require any planning. I wanted to appreciate something simple that was not a distraction to get my brain in a relaxed state."
-            ,"src":"https://media.discordapp.net/attachments/1148393855918559246/1224838691390750730/walking.png?ex=661ef2ec&is=660c7dec&hm=98ea4b691fd4af132e6d6cb4e466c454c98c0bea9ae5b4a3db2ac3d68594f1ec&=&format=webp&quality=lossless"
+            "bio":"My second project was a Twitter clone, I had a lot of difficulties. It was even more messy.",
+            "src":"https://media.discordapp.net/attachments/1148393855918559246/1224838691390750730/walking.png?ex=661ef2ec&is=660c7dec&hm=98ea4b691fd4af132e6d6cb4e466c454c98c0bea9ae5b4a3db2ac3d68594f1ec&=&format=webp&quality=lossless"
         },
         {
             "id":3,
             "title": "Project 3",
-            "bio":"I like simple hobbies I can improve on, that I can do when I want and that adds to my life. Getting better at cooking is great for ones health, wallet and mind"
-            ,"src":"https://media.discordapp.net/attachments/1148393855918559246/1224838674261348352/cooking.png?ex=661ef2e8&is=660c7de8&hm=1d8fc5ebc38892c76c8d220c328ac3eb4c20792a0a7650d61f45e79e640c2967&=&format=webp&quality=lossless"
+            "bio":"A Facebook clone, this time the feature list was smaller and I learned from past mistakes. This was much better.",
+            "src":"https://media.discordapp.net/attachments/1148393855918559246/1224838674261348352/cooking.png?ex=661ef2e8&is=660c7de8&hm=1d8fc5ebc38892c76c8d220c328ac3eb4c20792a0a7650d61f45e79e640c2967&=&format=webp&quality=lossless"
         },
         {
             "id":4,
             "title": "Project 4",
-            "bio":"Something again that I can do by myslef, painting. I like the ability to do it when I want. This also helped a lot for design, creating a color pallet and a plan for conitnuity."
-            ,"src":"https://media.discordapp.net/attachments/1148393855918559246/1224838679256629338/painting.png?ex=661ef2e9&is=660c7de9&hm=352651b417e2df19c7ec6e48d367c11b73f1e9392ceb8391567c461a60870fb6&=&format=webp&quality=lossless&width=350&height=350"
+            "bio":"Something again that I can do by myself, painting. I like the ability to do it when I want. This also helped a lot for design, creating a color palette and a plan for continuity.",
+            "src":"https://media.discordapp.net/attachments/1148393855918559246/1224838679256629338/painting.png?ex=661ef2e9&is=660c7de9&hm=352651b417e2df19c7ec6e48d367c11b73f1e9392ceb8391567c461a60870fb6&=&format=webp&quality=lossless&width=350&height=350"
         },
         {
             "id":5,
             "title": "Project 5",
-            "bio":"Taking a step back from painting and making it even more simple, I got into drawing. Now all I need is a pen and paper. Perhaps with a goal to create my own little story."
-            ,"src":"https://media.discordapp.net/attachments/1148393855918559246/1224838643642925137/drawing.png?ex=661ef2e1&is=660c7de1&hm=10442195d5c322cb5f8e13e64980de884439f6815d2d1d7f553a5b265f658e9d&=&format=webp&quality=lossless"
+            "bio":"A group collaboration, I helped with the front and backend, dealt with merge conflicts and got an ecommerce site working.",
+            "src":"https://media.discordapp.net/attachments/1148393855918559246/1224838643642925137/drawing.png?ex=661ef2e1&is=660c7de1&hm=10442195d5c322cb5f8e13e64980de884439f6815d2d1d7f553a5b265f658e9d&=&format=webp&quality=lossless"
         },
         {
             "id":6,
             "title": "Project 6",
-            "bio":"2018 I decided to make my new years resolution to read and I read every day since then. It helps a lot with learning too and being okay being bored. I also appreciate how there is a beggining middle and end rather then a loop like scolling on a phone."
-            ,"src":"https://media.discordapp.net/attachments/1148393855918559246/1224838686152065055/reading.png?ex=661ef2eb&is=660c7deb&hm=08d503d0295fa33ebd63f30714a38d250271a4a60a03af123cb76452a0d64616&=&format=webp&quality=lossless"
+            "bio":"A massage therapy scheduler that also recommended stretches based on the individual logged in.",
+            "src":"https://media.discordapp.net/attachments/1148393855918559246/1224838686152065055/reading.png?ex=661ef2eb&is=660c7deb&hm=08d503d0295fa33ebd63f30714a38d250271a4a60a03af123cb76452a0d64616&=&format=webp&quality=lossless"
         },
         {
             "id":7,
             "title": "Project 7",
-            "bio":"I always have a feeling I must learn something and ideally have synergy with my previous skillsets. Now I am focusing on things that help with coding and design with personal projects"
-            ,"src":"https://media.discordapp.net/attachments/1148393855918559246/1224838663536640081/brain.png?ex=661ef2e5&is=660c7de5&hm=30e9cf8705bb29d3435d9a0965d2b7f84216d957dcd27b666fd17a09b7890bd9&=&format=webp&quality=lossless"
+            "bio":"A coffee shop with a mobile-first approach which determined how many columns there would be, also toyed with the idea of using icons rather than words for navigation",
+            "src":"https://media.discordapp.net/attachments/1148393855918559246/1224838663536640081/brain.png?ex=661ef2e5&is=660c7de5&hm=30e9cf8705bb29d3435d9a0965d2b7f84216d957dcd27b666fd17a09b7890bd9&=&format=webp&quality=lossless"
         }
-        ],
-        "work":[
-
-            {
-                "id":1,
-                "title": "Janitor",
-                "bio":"Incorporated teamwork in the summer and autonomy during the semesters. Created floor plans, processes, organized moving, maintained stock and maintained the school"
-                ,"src":"https://media.discordapp.net/attachments/1148393855918559246/1225075833912430683/Duck_Toy_15.png?ex=661fcfc7&is=660d5ac7&hm=40b02885c303f1389485200b9e0673358a7ea31f70c92c79ea182d40cca20fad&=&format=webp&quality=lossless"
-            },
-            {
-                "id":2,
-                "title": "Army",
-                "bio":"A dream of mine, Helped with a natural disaster, spent many nights in a forest. Maintining equitment and working as a team was important."
-                ,"src":"https://media.discordapp.net/attachments/1148393855918559246/1225075684808851506/Duck_Toy_13.png?ex=661fcfa4&is=660d5aa4&hm=e339324bd51986fcdaa573e35eaa1cda6a60d15baf7e80ec924eaff1e14233c2&=&format=webp&quality=lossless"
-            },
-            {
-                "id":3,
-                "title": "English Teacher",
-                "bio":"Combining my skillset of video editing, streaming, TEFL certification and passion for teaching, I worked with many different students"
-                ,"src":"https://media.discordapp.net/attachments/1148393855918559246/1225075709915955231/Duck_Toy_11.png?ex=661fcfaa&is=660d5aaa&hm=6b101ae2dd581805a290167369df37dfc7c72c6586d02be4892ed4bca9f75a99&=&format=webp&quality=lossless"
-            },
-            {
-                "id":4,
-                "title": "Web developper",
-                "bio":"My next dream and one where I feel I can always grow, never feel trapped. I also do it on my own time and look forward to future education in the field."
-                ,"src":"https://media.discordapp.net/attachments/1148393855918559246/1225075373809598464/Duck_Toy_14.png?ex=661fcf59&is=660d5a59&hm=56e6e28db84ceda427891fba574c840861890f8579a1473a8b6e20a90ae58519&=&format=webp&quality=lossless"
-            }
-            ]
+    ],
+    "work":[
+        {
+            "id":1,
+            "title": "Janitor",
+            "bio":"Incorporated teamwork in the summer and autonomy during the semesters. Created floor plans, processes, organized moving, maintained stock, and maintained the school",
+            "src":"https://media.discordapp.net/attachments/1148393855918559246/1225075833912430683/Duck_Toy_15.png?ex=661fcfc7&is=660d5ac7&hm=40b02885c303f1389485200b9e0673358a7ea31f70c92c79ea182d40cca20fad&=&format=webp&quality=lossless"
+        },
+        {
+            "id":2,
+            "title": "Army",
+            "bio":"A dream of mine, Helped with a natural disaster, spent many nights in a forest. Maintaining equipment and working as a team was important.",
+            "src":"https://media.discordapp.net/attachments/1148393855918559246/1225075684808851506/Duck_Toy_13.png?ex=661fcfa4&is=660d5aa4&hm=e339324bd51986fcdaa573e35eaa1cda6a60d15baf7e80ec924eaff1e14233c2&=&format=webp&quality=lossless"
+        },
+        {
+            "id":3,
+            "title": "English Teacher",
+            "bio":"Combining my skillset of video editing, streaming, TEFL certification, and passion for teaching, I worked with many different students",
+            "src":"https://media.discordapp.net/attachments/1148393855918559246/1225075709915955231/Duck_Toy_11.png?ex=661fcfaa&is=660d5aaa&hm=6b101ae2dd581805a290167369df37dfc7c72c6586d02be4892ed4bca9f75a99&=&format=webp&quality=lossless"
+        },
+        {
+            "id":4,
+            "title": "Web Developer",
+            "bio":"My next dream and one where I feel I can always grow, never feel trapped. I also do it on my own time and look forward to future education in the field.",
+            "src":"https://media.discordapp.net/attachments/1148393855918559246/1225075373809598464/Duck_Toy_14.png?ex=661fcf59&is=660d5a59&hm=56e6e28db84ceda427891fba574c840861890f8579a1473a8b6e20a90ae58519&=&format=webp&quality=lossless"
+        }
+    ]
 }

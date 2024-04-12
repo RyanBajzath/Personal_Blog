@@ -16,7 +16,10 @@ const{activeCard, setActiveCard} = useContext(CardThemeContext);
   // Custom style to apply when a card is selected
   const mystyle = {
     transform: "scale(1.1)",
-    zIndex: 2
+    zIndex: 2,
+    border:"3px white solid",
+    borderRadius:"18px"
+
   };
 
 
@@ -61,17 +64,6 @@ const CardRotated = styled.div`
   }
 `;
 
-const SelectedCardRotated = styled.div`
-  align-items: flex-end;
-  align-content: flex-end;
-  scale:1.1;
-  margin: 20px -20px; /* Adjust the negative margin as needed for more overlap */
-  &:first-child {
-    transform: rotate(-15deg); /* Adjust the rotation angle as needed */
-  }
-  &:nth-child(3) {
-    transform: rotate(15deg); /* Adjust the rotation angle as needed */
-  }
-`;
+
 
 export default Cards;
